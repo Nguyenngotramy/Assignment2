@@ -42,7 +42,7 @@ table th{
 <tr>
 <td>Nhập dãy số:</td>
 <td><input type="text" name="nhap_mang" 
-value="<?php echo $_POST['nhap_mang'] ?>"></td>
+value="<?php if (!empty( $_POST['nhap_mang'])) echo $_POST['nhap_mang'] ?>"></td>
 </tr>
 <tr>
 <td></td>
